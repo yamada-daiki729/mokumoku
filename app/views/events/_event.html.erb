@@ -34,6 +34,11 @@
             <% end %>
           </div>
         <% end %>
+        <% if event.only_woman? %>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">女性限定</p>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
