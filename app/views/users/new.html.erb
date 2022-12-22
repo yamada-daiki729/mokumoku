@@ -25,7 +25,7 @@
             </div>
             <div class="mb-3">
               <%= f.label :gender %><br>
-              <%= f.select :gender,User.genders_i18n.values, class: 'form-control' %>
+              <%= f.select :gender,User.genders_i18n.keys.map {|k| [User.genders_i18n[k], k]}, class: 'form-control' %>
             </div>
             <div class="mb-3">
               <%= f.label :password %>
